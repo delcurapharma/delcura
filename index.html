@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Delcura Pharma</title>
-
-<style>
+<!DOCTYPE html><html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Delcura Pharma</title><style>
 
 body{
 font-family:Arial, sans-serif;
@@ -17,16 +11,16 @@ background:#f5f7fa;
 /* HEADER */
 
 header{
-background:white;
 display:flex;
-justify-content:space-between;
 align-items:center;
-padding:15px 25px;
+justify-content:space-between;
+padding:12px 20px;
+background:white;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 .logo{
-font-size:28px;
+font-size:26px;
 font-weight:bold;
 color:#0b3d5c;
 }
@@ -38,13 +32,23 @@ color:#0b3d5c;
 font-weight:bold;
 }
 
+/* SEARCH */
+
+.searchbox input{
+padding:8px 15px;
+border-radius:20px;
+border:1px solid #ccc;
+}
+
 /* HERO */
 
 .hero{
-background:#0b3d5c;
-color:white;
+background:url("https://images.unsplash.com/photo-1580281658629-8d2fbd9e0b8f");
+background-size:cover;
+background-position:center;
+padding:120px 20px;
 text-align:center;
-padding:80px 20px;
+color:white;
 }
 
 .hero h1{
@@ -54,30 +58,67 @@ margin:0;
 
 /* SECTION */
 
-.section{
-padding:40px 20px;
+.container{
+padding:30px;
 max-width:1000px;
 margin:auto;
 }
 
-h2{
-color:#0b3d5c;
-}
-
-/* PRODUCTS */
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-}
+/* CARD */
 
 .card{
 background:white;
 padding:20px;
 border-radius:10px;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
+margin-top:20px;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.product{
+background:white;
+padding:20px;
+border-radius:10px;
 text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+
+input{
+width:100%;
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+padding:10px 20px;
+background:#0b3d5c;
+color:white;
+border:none;
+border-radius:5px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:28px;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
 }
 
 /* FOOTER */
@@ -90,103 +131,43 @@ padding:20px;
 margin-top:40px;
 }
 
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">DELCURA</div>
-
-<nav>
-<a href="#home">Home</a>
+</style></head><body><header><div class="logo">DELCURA</div><div class="searchbox">
+<input type="text" placeholder="Search">
+</div><nav><a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#products">Products</a>
 <a href="#contact">Contact</a>
-</nav>
 
-</header>
-
-<!-- HERO -->
-
-<div id="home" class="hero">
-
-<h1>Delcura Pharma</h1>
-
-<p>Delivering Trusted Healthcare Solutions</p>
-
-</div>
-
-<!-- ABOUT -->
-
-<div id="about" class="section">
-
-<h2>About Delcura Pharma</h2>
-
-<p>
-
-Delcura Pharma is committed to delivering high-quality ethical medicines.
+</nav></header><div id="home" class="hero"><h1>Delcura Pharma</h1><p>Delivering Trusted Healthcare Solutions</p></div><div id="about" class="container"><h2>About Delcura Pharma</h2><div class="card"><p>Delcura Pharma is committed to delivering high-quality ethical medicines.
 Our mission is to support healthcare professionals and improve patient outcomes
 through trusted pharmaceutical products.
 
-</p>
-
-</div>
-
-<!-- PRODUCTS -->
-
-<div id="products" class="section">
-
-<h2>Our Products</h2>
-
-<div class="products">
-
-<div class="card">
+</p></div></div><div id="products" class="container"><h2>Our Products</h2><div class="products"><div class="product">
 <h3>Delgaba-M</h3>
 <p>Pregabalin + Methylcobalamin</p>
-</div>
-
-<div class="card">
+</div><div class="product">
 <h3>Delvema-M</h3>
-<p>Methylcobalamin + B6 + Folic Acid</p>
-</div>
-
-<div class="card">
+<p>Methylcobalamin + Vitamin B6 + Folic Acid</p>
+</div><div class="product">
 <h3>Delros-10</h3>
-<p>Rosuvastatin 10mg</p>
-</div>
-
-<div class="card">
+<p>Rosuvastatin 10 mg</p>
+</div><div class="product">
 <h3>Delpara-650</h3>
-<p>Paracetamol 650mg</p>
-</div>
-
-<div class="card">
+<p>Paracetamol 650 mg</p>
+</div><div class="product">
 <h3>Delpan-D</h3>
 <p>Pantoprazole + Domperidone</p>
-</div>
+</div></div></div><div id="contact" class="container"><h2>Distributor Enquiry</h2><div class="card"><form><input type="text" placeholder="Name"><br><br>
 
-</div>
+<input type="text" placeholder="City"><br><br>
 
-</div>
+<input type="text" placeholder="Phone"><br><br>
 
-<!-- CONTACT -->
+<button>Apply</button>
 
-<div id="contact" class="section">
+</form></div></div><a class="whatsapp" href="https://wa.me/918815125229">💬</a>
 
-<h2>Contact</h2>
+<footer>© 2026 Delcura Pharma
 
-<p>Phone / WhatsApp: 8815125229</p>
-
-</div>
-
-<footer>
-
-© 2026 Delcura Pharma
-
-</footer>
-
-</body>
-  </html>
+</footer></body>
+</html>
